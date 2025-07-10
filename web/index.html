@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#5b67d8">
+    <title>Local Business Digital Solutions</title>
+    <script src="images/Turn Your Dream Business into Reality!.jpg"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        .service-card {
+            transform: perspective(1000px) rotateY(0deg);
+            transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .service-card:hover {
+            transform: perspective(1000px) rotateY(8deg) translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(67, 97, 238, 0.3);
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <span class="text-xl font-bold text-gray-800">PixelX</span>
+                <div class="hidden md:flex space-x-8 absolute md:relative top-16 left-0 w-full bg-white shadow-lg md:shadow-none flex-col md:flex-row p-4 space-y-4 md:space-y-0" id="mobile-menu">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
+                    Digital Solutions for <span class="text-indigo-500">Local Businesses</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Helping small businesses grow with professional e-menus, visiting cards, and digital consulting - all at affordable prices.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full shadow-md transition duration-300 text-center">
+                        Get Started
+                    </a>
+                    <a href="#services" class="bg-white hover:bg-gray-100 text-gray-800 font-medium py-3 px-6 rounded-full border border-gray-200 shadow-md transition duration-300 text-center">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/Turn Your Dream Business into Reality!.jpg" 
+             class="rounded-lg shadow-xl w-full md:w-auto animate__animated animate__fadeIn">
+            </div>
+        </div>
+    </section>
+<!-- About Section -->
+<section class="py-16 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">About Us</h2>
+        <p class="text-lg">We are passionate about helping small businesses in your area grow through modern, affordable, and effective digital solutions. Whether you're a shop owner, café manager, or freelancer, we can help you get your business online fast.</p>
+    </div>
+</section>
+ <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We provide essential digital solutions tailored for local businesses looking to establish or enhance their online presence.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c490f04-0cb0-4060-8c0b-26a16d78287b.png" alt="Digital restaurant menu on tablet with appetizing food photos and clean typography" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">E-Menu Creation</h3>
+                    <p class="text-gray-600 mb-6">Beautiful, easy-to-update digital menus that help restaurants showcase their offerings effectively.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Mobile-responsive design
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Easy QR code access
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Simple content management
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/11ba4c7f-d58c-4620-af0d-6703182e0eea.png" alt="Professional business cards laid out on wooden desk showcasing elegant designs" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Visiting Cards</h3>
+                    <p class="text-gray-600 mb-6">Professional, memorable business cards that help local businesses make lasting impressions.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Custom designs
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Digital & print versions
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Fast turnaround
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c80840cf-22c9-40c6-9f94-0bd372e5088d.png" alt="Business consultant and shop owner discussing strategies over laptop in a cafe setting" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Digital Consulting</h3>
+                    <p class="text-gray-600 mb-6">Personalized guidance to help your business thrive in the digital world.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Social media strategies
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Online presence setup
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Customer engagement tips
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="images/Screenshot 2025-07-08 180544.png">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Meet the Founder</h2>
+                    <p class="text-gray-600 mb-6">
+                        Hi, I'm a passionate 18-year-old entrepreneur dedicated to helping local businesses in my community thrive in the digital world.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        I understand the challenges small businesses face when trying to establish an online presence, which is why I offer affordable, high-quality digital solutions tailored to their needs.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        My mission is to bridge the technology gap for local shops, restaurants, and service providers who want to compete effectively in today's digital marketplace.
+                    </p>
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
+                        <p class="text-gray-800 italic">
+                            "Even in a small town, your business deserves professional digital tools to connect with customers and grow."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PixelX | Digital Solutions for Local Businesses</title>
+  <meta name="description" content="PixelX offers affordable e-menus, visiting cards, websites & consulting to help local businesses in Palampur shine online." />
+  <meta name="keywords" content="PixelX, e-menu design, visiting cards, digital consulting, Palampur, small business, QR menu" />
+  <meta property="og:title" content="PixelX – Digital Solutions for Local Businesses" />
+  <meta property="og:description" content="Affordable e-menus, business cards, consulting & websites for small businesses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com" />
+  <meta property="og:image" content="https://your-domain.com/og-image.webp" />
+  <link rel="icon" href="https://cdn.yourdomain.com/favicon.ico" />
+
+  <!-- Tailwind + Animate.css CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+
+  <style>
+    [data-theme="dark"] { --bg: #1a202c; --text: #e2e8f0; --card: #2d3748; }
+    [data-theme="light"] { --bg: #ffffff; --text: #1a202c; --card: #f7fafc; }
+    body { background: var(--bg); color: var(--text); transition: .3s; }
+    .card { background: var(--card); transition: .3s; }
+    .toggle-darkmode {
+      position: fixed; top: 1rem; right: 1rem;
+      background: var(--card); padding: .5rem; border-radius: .5rem;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Dark Mode Toggle -->
+  <button class="toggle-darkmode shadow" onclick="toggleDarkMode()">🌓 Toggle Mode</button>
+
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow fixed w-full z-20">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-5 py-4">
+      <h1 class="text-xl font-bold text-indigo-600">PixelX</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-indigo-500">Home</a>
+        <a href="#services" class="hover:text-indigo-500">Services</a>
+        <a href="#pricing" class="hover:text-indigo-500">Pricing</a>
+        <a href="#contact" class="hover:text-indigo-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+      
+      <!-- E-Menu -->
+      <article class="card p-6 rounded-lg shadow hover:shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">E‑Menu Creation</h3>
+        <p>Modern QR‑based menus—no printing cost, always up to date.</p>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+          <li>Touch‑free ordering via QR</li>
+          <li>Edit anytime with no coding</li>
+          <li>Shareable link for social & WhatsApp</li>
+          <li>Brand‑aligned, clean layout</li>
+        </ul>
+      </article>
+
+      <!-- Visiting Card -->
+      <article class="card p-6 rounded-lg shadow hover:shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">Visiting Cards</h3>
+        <p>Stylish, high-resolution business cards for print and digital use.</p>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+          <li>Print-ready & digital formats</li>
+          <li>Reflects your brand</li>
+          <li>Fast 1–2 day delivery</li>
+          <li>Unlimited revisions for 7 days</li>
+        </ul>
+      </article>
+
+      <!-- Digital Consultation -->
+      <article class="card p-6 rounded-lg shadow hover:shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">Digital Consulting</h3>
+        <p>One-on-one sessions to map your digital strategy—websites, cards, menus & marketing.</p>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+          <li>Website & card planning</li>
+          <li>QR menu advice</li>
+          <li>Social & Google My Business</li>
+          <li>Local SEO tips included</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gray-100 dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center px-5">
+      <h2 class="text-3xl font-bold mb-8">Pricing Plans</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">E‑Menu</h3>
+          <p class="text-2xl font-bold mb-4">₹699 – ₹1,199</p>
+          <ul class="text-left space-y-1 mb-4">
+            <li>Editable QR menu</li>
+            <li>1 free revision</li>
+          </ul>
+          <button class="bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">Order Now</button>
+        </div>
+        <div class="card p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Visiting Card</h3>
+          <p class="text-2xl font-bold mb-4">₹499 – ₹999</p>
+          <ul class="text-left space-y-1 mb-4">
+            <li>Print-ready & digital card</li>
+            <li>Delivered in 24–48 hrs</li>
+          </ul>
+          <button class="bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">Order Now</button>
+        </div>
+        <div class="card p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Full Package</h3>
+          <p class="text-2xl font-bold mb-4">₹1,699</p>
+          <ul class="text-left space-y-1 mb-4">
+            <li>E‑Menu + Card + 1‑hr Consulting</li>
+            <li>1 free consulting hour</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & WhatsApp -->
+  <section id="contact" class="py-16">
+    <div class="max-w-2xl mx-auto text-center px-5 space-y-6">
+      <h2 class="text-3xl font-bold">Get in Touch</h2>
+      <form id="contact-form" action="https://formspree.io/f/xrbknbya" method="POST"
+            class="space-y-4 bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border rounded bg-white dark:bg-gray-700" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border rounded bg-white dark:bg-gray-700" />
+        <textarea name="message" rows="4" placeholder="Your Message…" required class="w-full px-4 py-2 border rounded bg-white dark:bg-gray-700"></textarea>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700 transition">Send Message</button>
+      </form>
+
+      <div id="success-popup" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 z-40">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate__animated animate__bounceIn text-center">
+          <h3 class="text-2xl font-bold text-green-600 mb-2">🎉 Message Sent!</h3>
+          <p class="mb-4">Thank you—I'll get back to you soon.</p>
+          <button onclick="closePopup()" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Close</button>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <p class="mb-2">—or chat on WhatsApp:</p>
+        <a href="https://wa.me/919015272425?text=Hi%2C%20I%27m%20interested%20in%20your%20services" target="_blank"
+           class="inline-flex items-center bg-green-500 text-white py-3 px-6 rounded-full hover:bg-green-600 transition">
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500">
+    &copy; 2025 PixelX — All rights reserved.
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.documentElement.dataset.theme =
+        document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    }
+
+    // Form submission & success popup
+    document.getElementById('contact-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const response = await fetch(e.target.action, {
+        method: 'POST',
+        body: new FormData(e.target),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        e.target.reset();
+        document.getElementById('success-popup').classList.remove('hidden');
+      } else {
+        alert('Oops! Something went wrong.');
+      }
+    });
+
+    function closePopup() {
+      document.getElementById('success-popup').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
+ 
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Pixel</h3>
+                    <p class="text-gray-300">Helping local businesses thrive with affordable digital solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-blue-400 transition">Services</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-blue-400 transition">About</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">E-Menu Creation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Visiting Cards</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Digital Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 PixelX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.add('animate__animated', 'animate__fadeInDown');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#5b67d8">
+    <title>PixelX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        .service-card {
+            transform: perspective(1000px) rotateY(0deg);
+            transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .service-card:hover {
+            transform: perspective(1000px) rotateY(8deg) translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(67, 97, 238, 0.3);
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+
+    <p class="text-lg md:text-xl max-w-xl mx-auto"></p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-300 py-6 text-center">
+    <p>&copy; 2025 PixelX. All rights reserved.</p>
+</footer>
+
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton?.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.add('animate__animated', 'animate__fadeInDown');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
